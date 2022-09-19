@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTI assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/160e983f76.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemneu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Resume</a></li>
+                <li><a href="#services">Stock Prices</a></li>
+                <li><a href="puzzle.html">Puzzle Game</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CSS/BootStrap</p>
+            <h1>Assignment Solution from<br> Team<span> Delta</span></h1>
+        </div>
+       </div> 
+    </div>
+
+    <!-- ----------------Resume---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="resume-col-1">
+                    <img src="images/user2.png">
+                </div>
+                <div class="download-col-2">
+                    <h1 class="subtitle">Resume</h1>
+                    <p>In order to develop and further my technical expertise acquired over the past three years at JIS College of Engineering, I'm looking for a decent position. I've finished my BCA at JIS College of Engineering, and during my fifth semester, I took a cybersecurity course in Palo Alto.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python Programing</span><br>Done Major and Minor Project In Python</li>
+                            <li><span>Cybersecurity</span><br>Done training on Cybersecurity Foundation - Palo Alto</li>
+                            <li><span>MS Office</span><br>Knowledge on Word, PowerPoint and Excel</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Working in LTI as Associate Trainee</li>
+                            <!-- <li><span>experience</span><br>Designing Web interfaces</li>
+                            <li><span>experience</span><br>Designing Web interfaces</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Computer Application</span><br>JIS College of Engineering | Aug'19 - Jun'22</li>
+                            <li><span>Higher Secondary</span><br>Kanchrapara Harnett English Medium School | Jun'16 - Jun'18</li>
+                            <li><span>Jun'15 - Jun'16</span><br>Seconday<br>Holy Child English Academy, Malda | Jun'15 - Jun'16</li>
+                        </ul>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------Stock Price------------------
+     -->
+     <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Stock List</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis.</p>
+                    <a href="#">learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis.</p>
+                    <a href="#">learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis.</p>
+                    <a href="#">learn more...</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+<!-- --------------Link and Contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-at"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="socials-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Subhojit. Made for LTI assignment</p>
+        <p>This page was viewed</p>
+        <h1 id="count">0</h1>
+        <p>times</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
